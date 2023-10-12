@@ -9,9 +9,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: import.meta.env.NODE_ENV === 'production'
-    ? '/menu-restaurants-app/'
-    : '/',
+  base: '/',
   plugins: [
     vue({
       template: { transformAssetUrls }
